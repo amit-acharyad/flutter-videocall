@@ -5,6 +5,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:videocall/auth/authrepo.dart';
 import 'package:videocall/auth/login/loginScreen.dart';
 import 'package:videocall/videocall/controller/videoCallChecker.dart';
+import 'package:videocall/videocall/view/incomingcallScreen.dart';
 
 import 'auth/usermodel.dart';
 import 'videocall/view/webRTCVideoCallScreen.dart';
@@ -95,10 +96,11 @@ class HomeScreen extends StatelessWidget {
                     onTap: () {
                       print(
                           "Going to join room ${VideoCallChecker.currentCall.value.roomId}");
-                      Get.to(WebRTCVideoCallScreen(
-                        receiverId: "1",
-                        roomId: VideoCallChecker.currentCall.value.roomId,
-                      ));
+                      Get.to(IncomingCallScreen());
+                      // Get.to(WebRTCVideoCallScreen(
+                      //   receiverId: "1",
+                      //   roomId: VideoCallChecker.currentCall.value.roomId,
+                      // ));
                     },
                     child: const SizedBox(
                       height: 80,
