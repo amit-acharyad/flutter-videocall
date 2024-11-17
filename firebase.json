@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "videocall-ad6b5",
+          "appId": "1:931053472855:android:72a1741ba28f42fc76e712",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "videocall-ad6b5",
+          "configurations": {
+            "android": "1:931053472855:android:72a1741ba28f42fc76e712",
+            "web": "1:931053472855:web:dfb2c636f7be06fd76e712"
+          }
+        }
+      }
+    }
+  }
+}
